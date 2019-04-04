@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label" android:text="@string/app_name"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email" android:ems="10"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/label"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        android:inputType="textEmailAddress" android:hint="@string/email" />
+
+    <EditText
+        android:id="@+id/name" android:ems="10"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        android:inputType="textPersonName" android:hint="@string/name" />
+
+    <EditText
+        android:id="@+id/postaladdr" android:ems="10"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        android:inputType="textPostalAddress" android:hint="@string/postaladdr" />
+
+    <EditText
+        android:id="@+id/phone" android:ems="10"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/postaladdr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="phone" android:hint="@string/phone" />
+
+    <Button
+        android:id="@+id/btnAdd" android:text="@string/add"
+        android:onClick="addAddress"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnShow" android:text="@string/show"
+        android:onClick="showAllAddresses"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnDelete" android:text="@string/delete"
+        android:onClick="deleteAllAddresses"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnShow"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+</android.support.constraint.ConstraintLayout>

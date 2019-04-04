@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyAddressBook</string>
+    <string name="email">E-Mail: </string>
+    <string name="name">Name: </string>
+    <string name="postaladdr">PostalAddress</string>
+    <string name="phone">Phone</string>
+    <string name="add">Add</string>
+    <string name="show">Show All</string>
+    <string name="delete">Delete All</string>
+</resources>
